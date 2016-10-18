@@ -1,0 +1,3 @@
+{
+    "files": [{"file":"index1.html", "delay":2,"beginDate":"2016-10-20"}, {"file":"index2.html", "delay":10}, {"file":"index3/index3.html", "delay":2}, {"file":"index3_1/index3.html", "delay":10}, {"file":"index4/smf.html", "delay":5},{"file":"calendar.html", "delay":15}]
+}
