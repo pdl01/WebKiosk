@@ -1,9 +1,10 @@
 #!/bin/sh
+. ./settings.sh
 WORKING_DIR="/home/vagrant/www/html/javascript"
 ZIP_DOWNLOAD_DIR="$WORKING_DIR/zip";
 ZIP_FILE="$ZIP_DOWNLOAD_DIR/testX.zip";
 ZIP_BACKUP="$ZIP_DOWNLOAD_DIR/testX.zip.old.$timestamp";
-SRC_URL="https://www.dropbox.com/sh/jydi6uup1g0s2ab/AAD6ju8zVBGqiMdABTD6iZj7a?dl=1";
+SRC_URL=$EXTERNAL_ZIP_URL;
 ZIP_DEST="$ZIP_DOWNLOAD_DIR/package";
 WWW_DEST="$WORKING_DIR/package";
 timestamp=$(date +%s);
