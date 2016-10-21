@@ -7,51 +7,13 @@
         <script type="text/javascript" src="javascript/angular-1.5.8/angular-sanitize.js"></script>
 
         <script type="text/javascript" src="javascript/app/app.js"></script>
-        <style>
-        body {
-                margin:0px;
-                padding:0px;
-                overflow:none;
-                background-color:green;
-                background-image:url('images/green-background.jpg');
-        }
-        .mainDiv {
-                border:1px solid #ccc;
-                margin:10px;
-                padding:4px;
-                height:95%;
-                width:98%;
-                overflow:hidden;
-                background-color:white;
-
-        }
-        .mainHeader {
-                width:100%;
-                height:10%;
-                font-family: "Times New Roman", Georgia, Serif;
-                font-size:2.5em;
-                text-align:center;
-        }
-        .mainFooter {
-                width:100%;
-                height:10%;
-                font-family: "Times New Roman", Georgia, Serif;
-                font-size:2.5em;
-                text-align:center;
-        }
-        .contentDiv {
-            width:100%;
-            height:80%;
-            overflow:hidden;
-        }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div ng-app="kioskApp" ng-controller="kioskAppCtrl" class="mainDiv">
+        <div ng-app="kioskApp" ng-controller="kioskAppCtrl" class="mainDiv rcorners">
         <div class="mainHeader">Header</div>
         <div class="contentDiv" ng-bind-html="trustAsHtml(htmlContents)"></div>
         <div class="mainFooter">Footer</div>
         </div>
-
     </body>
 </html>
